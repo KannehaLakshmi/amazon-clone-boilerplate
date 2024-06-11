@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #232f3e;
+    color: white;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #febd69;
+    border: none;
+    cursor: pointer;
+}
+
+.user-options {
+    display: flex;
+    gap: 20px;
+}
+
+.user-options .option {
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 10px 20px;
+    background-color: #37475a;
+    color: white;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.banner {
+    background: url('path/to/your/banner-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.banner-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1;
+    min-width: calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.shop-more, .explore-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007185;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
